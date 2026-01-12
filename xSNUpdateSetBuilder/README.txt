@@ -7,6 +7,7 @@ It utilizes the out of box GlideUpdateManager2 and GlideUpdateSet classes to per
 
 A typical use-case will look something like this:
 
+<code>
 //1. Create new builder object.
 var util = new xUpdateSetBuilder();
 
@@ -20,6 +21,7 @@ util.captureApplicationMenuAndModules("12345fbc0fa10300e608b36be10ABCDEF");
 
 //3. Finally, call writeUpdateSet() to write all captured objects to an update set.
 util.writeUpdateSet("My New Update Set");
+</code>
 
 Current object types not supported (as of 1.0.0)
 -----------------------------------------------------------
