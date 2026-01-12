@@ -17,6 +17,7 @@ util.captureApplicationMenuAndModules("12345fbc0fa10300e608b36be10ABCDEF");
 .
 .
 .
+
 //3. Finally, call writeUpdateSet() to write all captured objects to an update set.
 util.writeUpdateSet("My New Update Set");
 
