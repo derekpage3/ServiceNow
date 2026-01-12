@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2026-01-12 19:07:51">
+<sys_script_include action="INSERT_OR_UPDATE">
+<access>public</access>
+<active>true</active>
+<api_name>global.xImportSetLogger</api_name>
+<caller_access/>
+<client_callable>false</client_callable>
+<description>@Author: github.com/derekpage3
+@Date: 06/25/2023
+@Extends https://github.com/derekpage3/ServiceNow/blob/main/logging/xBufferedLogger.js
+
+This class extends the xBufferedLogger class, adding functions for writing the results to an Import set or Import Set Row record.  See the xBufferedLogger class for the logging API provided, as this class functions in the same manner as that one; the only exception is that instead of calling flush(), callers instead use logToImportRow() or logToImportSet() to log the buffered log content to the Import Set Row used to instantiate this class, or its parent Import Set.
+
+WARNING: SEE THE NOTES IN THE xBufferedLogger CLASS FOR INFORMATION ON SAFE USAGE OF THIS CLASS.
+
+Copyright 2026 github.com/derekpage3
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</description>
+<mobile_callable>false</mobile_callable>
+<name>xImportSetLogger</name>
+<sandbox_callable>false</sandbox_callable>
+<script><![CDATA[var xImportSetLogger = Class.create();
+xImportSetLogger.prototype = Object.extendsObject(xBufferedLogger, {
+
+	//captures the target Import Set/Row the results will be logged to.
+	sourceRowSysId: null,
+	sourceImportSetSysId: null,
+
+	/**
+	 * @param {GlideRecord} the 'source' record from the Transform Map script.
+	 * 
+	 * Initializes a new import set logger with the provided source row from a transform map script.
+	 */
+    initialize: function(sourceRecord) {
+		if (gs.nil(sourceRecord))
+			throw "xImportSetLogger: Parameter 'sourceRecord' is required!";
+		if (!(sourceRecord instanceof GlideRecord))
+			throw "xImportSetLogger: Parameter 'sourceRecord' must be a GlideRecord!";
+
+		//If sourceRecord is an Import Set record, then the logger will be attached to the import set.
+		if (sourceRecord.getTableName() == "sys_import_set") {
+			this.sourceImportSetSysId = "" + sourceRecord.sys_id;
+		
+		//Otherwise, the logger must be attached to an import set row.
+		//TODO: Make this logic a bit "smarter" than just checking for the "sys_import_set" field.
+		} else if (source.getElement("sys_import_set") !== null) {
+			this.sourceRowSysId = "" + sourceRecord.sys_id;
+			this.sourceImportSetSysId = "" + sourceRecord.sys_import_set;
+
+		//Otherwise, unsupported record type.	
+		} else {
+			throw "xImportSetLogger: Parameter 'sourceRecord' does not appear to be an Import Set or Import set Row record!";
+		}
+
+		//Run initializer of parent xBufferedLogger class.
+		xBufferedLogger.prototype.initialize.call(this);	
+    },
+
+	/**
+	 * Log all contents in the log buffer to the Import Set Row that was used to initialize this logger.
+	 */
+	logToImportRow: function() {
+		
+		//error if the logger wasn't initialized against an import set row.
+		if (gs.nil(this.sourceRowSysId))
+			throw "xImportSetLogger.logToImportRow: logger was not initialized against an Import Set Row, therefore logging to an import set row is not supported";
+		
+		//Write log entry against the Import Set Row if any content has been logged.
+		var logContent = this.flush();
+		if (logContent.length > 0) {
+			var logRow = new GlideRecord("import_log");
+			logRow.initialize();
+			logRow.setValue("level", "");
+			logRow.setValue("import_set_row", this.sourceRowSysId);
+			logRow.setValue("message", logContent);
+			logRow.insert();
+		}
+	},
+
+	/**
+	 * Log all contents in the log buffer to the parent Import Set of the Import Set Row that was used
+	 * to initialize this logger.
+	 */
+	logToImportSet: function() {
+
+		//Write log entry against the Import Set if any content has been logged.
+		var logContent = this.flush();
+		if (logContent.length > 0) {
+			var logRow = new GlideRecord("import_log");
+			logRow.initialize();
+			logRow.setValue("level", "");
+			logRow.setValue("import_set", this.sourceImportSetSysId);
+			logRow.setValue("message", logContent);
+			logRow.insert();
+		}
+	},
+
+    type: 'xImportSetLogger'
+});]]></script>
+<sys_class_name>sys_script_include</sys_class_name>
+<sys_created_by>dpage@commonwealth.com</sys_created_by>
+<sys_created_on>2026-01-12 18:59:43</sys_created_on>
+<sys_id>9ffc2413835e7a1095daccb6feaad371</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_name>xImportSetLogger</sys_name>
+<sys_package display_value="Global" source="global">global</sys_package>
+<sys_policy/>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_script_include_9ffc2413835e7a1095daccb6feaad371</sys_update_name>
+<sys_updated_by>dpage@commonwealth.com</sys_updated_by>
+<sys_updated_on>2026-01-12 19:06:25</sys_updated_on>
+</sys_script_include>
+</unload>
