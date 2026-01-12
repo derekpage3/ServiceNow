@@ -1,4 +1,4 @@
-This project contains a collection of various useful scripts I've developed on various ServiceNow projects over the years. Each script is contained within a separate project sub-folder, containing any necessary dependencies as well.  All work is free for public use under a standard MIT License.
+This project contains a collection of various useful scripts I've developed on various ServiceNow projects over the years. Each script is contained within a separate project sub-folder, containing any necessary dependencies as well.  All works contained within this project are free for public use under a standard MIT License.  Feel free to reach out with any feedback or comments.
 
 Copyright 2026 github.com/derekpage3
 
