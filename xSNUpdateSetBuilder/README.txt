@@ -1,5 +1,4 @@
 @Author: github.com/derekpage3
-
 @Date: 07/06/2020
 
 Utility class for programmatically building update sets with specified objects.  The original use case for this was building a new update set to migrate a large application to a new ServiceNow environment, because the application was large and there were simply too many existing Update Sets to find and batch together to generate one with the entirety of the application's objects.  There may be other uses for this and so it is provided for anyone who may find it useful.
