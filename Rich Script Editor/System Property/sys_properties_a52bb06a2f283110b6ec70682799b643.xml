@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2026-01-23 04:57:18">
+<sys_properties action="INSERT_OR_UPDATE">
+<choices/>
+<description>Rich Background Script Editor activity formatter fields</description>
+<ignore_cache>false</ignore_cache>
+<is_private>false</is_private>
+<name>glide.ui.u_x_rich_background_script_editor_activity.fields</name>
+<read_roles/>
+<suffix>global</suffix>
+<sys_class_name>sys_properties</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2023-08-12 03:31:10</sys_created_on>
+<sys_id>a52bb06a2f283110b6ec70682799b643</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_name>glide.ui.u_x_rich_background_script_editor_activity.fields</sys_name>
+<sys_package display_value="Global" source="global">global</sys_package>
+<sys_policy/>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_properties_a52bb06a2f283110b6ec70682799b643</sys_update_name>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2023-08-12 03:31:37</sys_updated_on>
+<type>string</type>
+<value>u_notes</value>
+<write_roles/>
+</sys_properties>
+</unload>
