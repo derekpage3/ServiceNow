@@ -1,0 +1,1342 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2024-02-05 22:07:39">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>@author: github.com/derekpage3
+@version 0.6 (Geneva+)
+SOURCE: https://github.com/derekpage3/ServiceNow
+
+DESCRIPTION: This update set provides a new  experimental background script editor, similar to the out of box "Scripts - Background" tool provided by ServiceNow, but with the  JavaScript editor interface.   The tool is built using a standard form so the level of functionality provided by the script editor is entirely dependent on the version of ServiceNow the tool is installed on and the Script field editor capabilities associated with it.  No customizations have been made to the Script field's implementation (TinyMCE as of this writing).
+
+WARNING: Any scripts run from the interface will run with the permission level of the current user (security_admin if elevated, admin otherwise).  Exercise caution in the scripts you run from this interface.  All of the customary guidelines from the OOB ServiceNow background scripts page apply here.
+
+DO NOT INSTALL THIS ON REGULAR INSTANCES, AS THIS TOOLSET MAY INTRODUCE POTENTIAL SECURITY VULNERABILITIES THAT ARE NOT ACCEPTABLE IN A REAL ENVIRONMENT WITH CUSTOMER DATA IN IT.  THIS TOOL IS ONLY INTENDED FOR USE IN A PERSONAL DEVELOPER INSTANCE WITH NO SENSITIVE DATA IN IT.</description>
+<inserted/>
+<name>Rich Script Editor 0.6 (github.com/derekpage3)</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>9013f0aa2fa43110b6ec70682799b666</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:38</sys_created_on>
+<sys_id>061cd8f32f80ca14b6ec70682799b6d7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:38</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_module_3123cd662f683110b6ec70682799b6c9</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="System Definition">c7fd1762c0a80166015926d15731965d</application><assessment/><device_type/><filter/><hint>Allows an admin user to write and execute freeform script</hint><homepage/><image>images/icons/script.gif</image><link_type>LIST</link_type><map_page/><mobile_title>Scripts - Background</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>u_x_rich_background_script_editor</name><order>54</order><override_menu_roles>false</override_menu_roles><query>sys.scripts.do</query><report/><roles>admin</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-12 04:06:07</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>3123cd662f683110b6ec70682799b6c9</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Scripts - Background (Rich) - All</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_app_module_3123cd662f683110b6ec70682799b6c9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-12 04:52:04</sys_updated_on><timeline_page/><title>Scripts - Background (Rich) - All</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+<payload_hash>-2094509203</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:39</sys_created_on>
+<sys_id>021cd8f32f80ca14b6ec70682799b6d8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189e81654a60000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:39</sys_updated_on>
+<table>u_x_rich_background_script_editor</table>
+<target_name>Scripts - Background (Rich) - All</target_name>
+<type>Module</type>
+<update_domain>global</update_domain>
+<update_guid>b2adc16a1e683110631823f49a53dd32</update_guid>
+<update_guid_history>b2adc16a1e683110631823f49a53dd32:-2094509203,169d8d6aeaa83110292b50f5f0c072ae:-462807121,9233816a2e6831105700009f4326eff9:1668316169,bd23cd66f2683110cdc9192cc744c9cb:2122736778</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_x_rich_background_script_editor_u_script_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_script" label="Script" language="en" table="u_x_rich_background_script_editor"><sys_documentation action="INSERT_OR_UPDATE"><element>u_script</element><help/><hint/><label>Script</label><language>en</language><name>u_x_rich_background_script_editor</name><plural>Scripts</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-12 03:22:52</sys_created_on><sys_id>80493c662f283110b6ec70682799b60a</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Script</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_x_rich_background_script_editor_u_script_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-14 21:15:54</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-522445797</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:39</sys_created_on>
+<sys_id>021cd8f32f80ca14b6ec70682799b6db</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189f5e7c41b0000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:39</sys_updated_on>
+<table>u_x_rich_background_script_editor</table>
+<target_name>Rich Background Script Editor.Script</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>f10283139668b51050caf7b3816611c0</update_guid>
+<update_guid_history>f10283139668b51050caf7b3816611c0:-522445797,49e18f9f8e28b510879654775b0d0e80:-1515005162,1c493c667c2831101812d520a8ede329:-522445797</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_style_826af42a2f283110b6ec70682799b69e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_style"><sys_ui_style action="INSERT_OR_UPDATE"><alt/><element>u_output</element><name>u_x_rich_background_script_editor</name><style>background-color: #012456; color: #EEEDF0; min-height: 300px;</style><sys_class_name>sys_ui_style</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-12 03:28:04</sys_created_on><sys_id>826af42a2f283110b6ec70682799b69e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_x_rich_background_script_editor</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_style_826af42a2f283110b6ec70682799b69e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-12 03:28:04</sys_updated_on><value/></sys_ui_style><sys_translated_text action="delete_multiple" query="documentkey=826af42a2f283110b6ec70682799b69e"/></record_update>]]></payload>
+<payload_hash>1235101591</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:39</sys_created_on>
+<sys_id>061c18372f80ca14b6ec70682799b636</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189e7c96e330000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:39</sys_updated_on>
+<table>u_x_rich_background_script_editor</table>
+<target_name>u_x_rich_background_script_editor</target_name>
+<type>Style</type>
+<update_domain>global</update_domain>
+<update_guid>147ab42a502831104a82f3cbcfb097ff</update_guid>
+<update_guid_history>147ab42a502831104a82f3cbcfb097ff:1235101591</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_x_rich_background_script_editor_u_tags</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="u_tags" table="u_x_rich_background_script_editor"><active>true</active><array>false</array><attributes>edge_encryption_enabled=true</attributes><audit>false</audit><calculation/><choice/><choice_field/><choice_table/><column_label>Tags</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>u_tags</element><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="String">string</internal_type><mandatory>false</mandatory><max_length>255</max_length><name>u_x_rich_background_script_editor</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-12 03:22:52</sys_created_on><sys_id>04493c662f283110b6ec70682799b611</sys_id><sys_name>Tags</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_dictionary_u_x_rich_background_script_editor_u_tags</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-12 03:24:29</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>-2130630529</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:39</sys_created_on>
+<sys_id>061cd8f32f80ca14b6ec70682799b6da</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189e7c625d60000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:39</sys_updated_on>
+<table>u_x_rich_background_script_editor</table>
+<target_name>Rich Background Script Editor.Tags</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>f39938a6692831107c0a2c7cea676f63</update_guid>
+<update_guid_history>f39938a6692831107c0a2c7cea676f63:-2130630529,98493c66c92831100ddb72d290b7eb22:1178202645</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_054ff4622f683110b6ec70682799b620</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-12 03:49:09</sys_created_on><sys_id>054ff4622f683110b6ec70682799b620</sys_id><sys_mod_count>0</sys_mod_count><sys_name>xBackgroundScriptEditorUtil.admin</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="xBackgroundScriptEditorUtil">414ff0ee2f283110b6ec70682799b65a</sys_security_acl><sys_update_name>sys_security_acl_role_054ff4622f683110b6ec70682799b620</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-12 03:49:09</sys_updated_on><sys_user_role display_value="admin" name="admin">2831a114c611228501d4ea6c309d626d</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>1991585858</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:39</sys_created_on>
+<sys_id>061cd8f32f80ca14b6ec70682799b6dd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189e7dcba2b0000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:39</sys_updated_on>
+<table>xBackgroundScriptEditorUtil</table>
+<target_name>xBackgroundScriptEditorUtil.admin</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>854ff462bc6831107977b924f8014022</update_guid>
+<update_guid_history>854ff462bc6831107977b924f8014022:1991585858</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_role_032eb4ee2f283110b6ec70682799b64f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_role"><sys_ui_action_role action="INSERT_OR_UPDATE"><sys_class_name>sys_ui_action_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-12 03:45:05</sys_created_on><sys_id>032eb4ee2f283110b6ec70682799b64f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>.admin</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_ui_action display_value="">522ef4ee2f283110b6ec70682799b698</sys_ui_action><sys_update_name>sys_ui_action_role_032eb4ee2f283110b6ec70682799b64f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-12 03:45:05</sys_updated_on><sys_user_role display_value="admin" name="admin">2831a114c611228501d4ea6c309d626d</sys_user_role></sys_ui_action_role></record_update>]]></payload>
+<payload_hash>1013765245</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:39</sys_created_on>
+<sys_id>0a1c18372f80ca14b6ec70682799b635</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189e7d901040000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:39</sys_updated_on>
+<table/>
+<target_name>.admin</target_name>
+<type>UI Action Role</type>
+<update_domain>global</update_domain>
+<update_guid>295e38ee9428311028050e8a48aae500</update_guid>
+<update_guid_history>295e38ee9428311028050e8a48aae500:1013765245</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>db_image_ad89eb4e0f286240e608b36be1050edc</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><db_image action="INSERT_OR_UPDATE">
+<active>true</active>
+<category/>
+<format>gif</format>
+<height>32</height>
+<image/>
+<name>xRichEditorProgressIndicator.gif</name>
+<size_bytes>5532</size_bytes>
+<sys_class_name>db_image</sys_class_name>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2016-07-13 04:31:35</sys_created_on>
+<sys_customer_update>true</sys_customer_update>
+<sys_id>ad89eb4e0f286240e608b36be1050edc</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_name>xRichEditorProgressIndicator.gif</sys_name>
+<sys_package display_value="Global" source="global">global</sys_package>
+<sys_policy/>
+<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>db_image_ad89eb4e0f286240e608b36be1050edc</sys_update_name>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2016-07-13 04:31:49</sys_updated_on>
+<thumbnail/>
+<width>32</width>
+</db_image></record_update>]]></payload>
+<payload_hash>508288853</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:38</sys_created_on>
+<sys_id>0a1cd8f32f80ca14b6ec70682799b6d7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189e7e970910000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:38</sys_updated_on>
+<table/>
+<target_name>xRichEditorProgressIndicator.gif</target_name>
+<type>Images</type>
+<update_domain>global</update_domain>
+<update_guid>28720de6856831105c5964085ed5a830</update_guid>
+<update_guid_history>28720de6856831105c5964085ed5a830:508288853</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_x_rich_background_script_editor_u_name</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="u_name" table="u_x_rich_background_script_editor"><active>true</active><array>false</array><attributes>edge_encryption_enabled=true</attributes><audit>false</audit><calculation/><choice/><choice_field/><choice_table/><column_label>Name</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>true</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>u_name</element><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="String">string</internal_type><mandatory>false</mandatory><max_length>255</max_length><name>u_x_rich_background_script_editor</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-12 03:22:52</sys_created_on><sys_id>08493c662f283110b6ec70682799b60c</sys_id><sys_name>Name</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_dictionary_u_x_rich_background_script_editor_u_name</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-12 03:23:44</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>-242030262</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:39</sys_created_on>
+<sys_id>0a1cd8f32f80ca14b6ec70682799b6d9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189e7c574a70000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:39</sys_updated_on>
+<table>u_x_rich_background_script_editor</table>
+<target_name>Rich Background Script Editor.Name</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>f07930a608283110d8b1241299899232</update_guid>
+<update_guid_history>f07930a608283110d8b1241299899232:-242030262,98493c667c2831107511941a8f46b620:-1626613483</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_32cf78a22f683110b6ec70682799b6ea</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_security_acl"&gt;&lt;sys_security_acl action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;admin_overrides&gt;true&lt;/admin_overrides&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;condition/&gt;&lt;description&gt;Only admin users can use this tool.&lt;/description&gt;&lt;name&gt;u_x_rich_background_script_editor&lt;/name&gt;&lt;operation display_value="create"&gt;create&lt;/operation&gt;&lt;script&gt;&lt;![CDATA[answer = gs.isInteractive();]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_security_acl&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-08-12 03:52:10&lt;/sys_created_on&gt;&lt;sys_id&gt;32cf78a22f683110b6ec70682799b6ea&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;u_x_rich_background_script_editor&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_security_acl_32cf78a22f683110b6ec70682799b6ea&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-08-12 03:52:10&lt;/sys_updated_on&gt;&lt;type display_value="record"&gt;record&lt;/type&gt;&lt;/sys_security_acl&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1488700214</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:39</sys_created_on>
+<sys_id>0a1cd8f32f80ca14b6ec70682799b6dc</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189e7df7c080000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:39</sys_updated_on>
+<table>u_x_rich_background_script_editor</table>
+<target_name>u_x_rich_background_script_editor</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>11ffbca2d46831107f6dd15f357f5efb</update_guid>
+<update_guid_history>11ffbca2d46831107f6dd15f357f5efb:1488700214</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_843085e22f683110b6ec70682799b644</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-12 03:53:11</sys_created_on><sys_id>843085e22f683110b6ec70682799b644</sys_id><sys_mod_count>0</sys_mod_count><sys_name>.admin</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="">0c3081a22f683110b6ec70682799b63f</sys_security_acl><sys_update_name>sys_security_acl_role_843085e22f683110b6ec70682799b644</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-12 03:53:11</sys_updated_on><sys_user_role display_value="admin" name="admin">2831a114c611228501d4ea6c309d626d</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>414006674</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:39</sys_created_on>
+<sys_id>0e1c18372f80ca14b6ec70682799b634</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189e7e06a4a0000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:39</sys_updated_on>
+<table>0c3081a22f683110b6ec70682799b63f</table>
+<target_name>.admin</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>003085e2dd683110d3f613a4dc36ec46</update_guid>
+<update_guid_history>003085e2dd683110d3f613a4dc36ec46:414006674</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_attachment_doc_a4b92f4e0f286240e608b36be1050ea7</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_attachment_doc action="INSERT_OR_UPDATE">
+<data>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</data>
+<length>3736</length>
+<position>1</position>
+<sys_attachment display_value="image" sys_id="e0b92f4e0f286240e608b36be1050ea7">e0b92f4e0f286240e608b36be1050ea7</sys_attachment>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2016-07-13 04:31:49</sys_created_on>
+<sys_id>a4b92f4e0f286240e608b36be1050ea7</sys_id>
+</sys_attachment_doc></record_update>]]></payload>
+<payload_hash>1018069964</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:39</sys_created_on>
+<sys_id>0e1cd8f32f80ca14b6ec70682799b6d8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189e7e970eb0000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:39</sys_updated_on>
+<table/>
+<target_name>a4b92f4e0f286240e608b36be1050ea7</target_name>
+<type>Attachment Document</type>
+<update_domain>global</update_domain>
+<update_guid>68720de6cf6831107c3eec7e79d16e35</update_guid>
+<update_guid_history>68720de6cf6831107c3eec7e79d16e35:1018069964</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_264df86e2f283110b6ec70682799b690</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;u_x_rich_background_script_editor&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Admin Warning&lt;/name&gt;&lt;order&gt;0&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous) {
+	
+	//Provide an extra warning if the user is escalated to "security_admin" as scripts run with this privilege
+	//can do a lot of damage if bad code is run.
+	if (gs.hasRole("security_admin")) {
+		gs.addErrorMessage("WARNING: YOU ARE CURRENTLY ESCALATED TO security_admin. Any scripts executed will run with SECURITY_ADMIN level permission and could do serious harm if executed carelessly. USE THIS TOOL AT YOUR OWN RISK.");
+	} else {
+		gs.addInfoMessage("NOTE: Any scripts executed from this interface will run with admin permissions.");
+	}
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-08-12 03:41:18&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;264df86e2f283110b6ec70682799b690&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Admin Warning&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_264df86e2f283110b6ec70682799b690&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-08-12 03:41:18&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before_display&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=264df86e2f283110b6ec70682799b690"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>128820186</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:39</sys_created_on>
+<sys_id>0e1cd8f32f80ca14b6ec70682799b6db</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189e7d589cb0000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:39</sys_updated_on>
+<table>u_x_rich_background_script_editor</table>
+<target_name>Admin Warning</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>ca7dbc6ab5283110ace77f16f84d85c4</update_guid>
+<update_guid_history>ca7dbc6ab5283110ace77f16f84d85c4:128820186</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_dc09f4262f283110b6ec70682799b6e7</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="dc09f4262f283110b6ec70682799b6e7" sys_domain="global" table="u_x_rich_background_script_editor" version="3" view=""><sys_ui_annotation action="INSERT_OR_UPDATE"><is_plain_text>false</is_plain_text><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-14 21:22:52</sys_created_on><sys_id>fb93c3532f68b510b6ec70682799b67b</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-14 21:22:52</sys_updated_on><text>&lt;span style="font-weight: bold; background-color:#FFFFCE"&gt;NOTE: only gs.log() is supported for output to the console&lt;/span&gt;</text><type display_value="Plain Text">8e7fdb04531300109686ddeeff7b127d</type></sys_ui_annotation><sys_ui_annotation action="INSERT_OR_UPDATE"><is_plain_text>false</is_plain_text><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-14 21:22:52</sys_created_on><sys_id>bf93c3532f68b510b6ec70682799b67b</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-14 21:22:52</sys_updated_on><text/><type display_value="Line Separator">a93fc8e00f530000b12e6903cfe012e6</type></sys_ui_annotation><sys_ui_annotation action="INSERT_OR_UPDATE"><is_plain_text>false</is_plain_text><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-14 21:22:52</sys_created_on><sys_id>f793c3532f68b510b6ec70682799b67b</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-14 21:22:52</sys_updated_on><text/><type display_value="Line Separator">a93fc8e00f530000b12e6903cfe012e6</type></sys_ui_annotation><sys_ui_element action="INSERT_OR_UPDATE"><element>.begin_split</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-14 21:22:52</sys_created_on><sys_id>739303d32f68b510b6ec70682799b607</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_x_rich_background_script_editor" sys_domain="global" view="Default view">dc09f4262f283110b6ec70682799b6e7</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-14 21:22:52</sys_updated_on><sys_user/><type>.begin_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_name</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-14 21:22:52</sys_created_on><sys_id>f39303d32f68b510b6ec70682799b607</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_x_rich_background_script_editor" sys_domain="global" view="Default view">dc09f4262f283110b6ec70682799b6e7</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-14 21:22:52</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-14 21:22:52</sys_created_on><sys_id>779303d32f68b510b6ec70682799b607</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_x_rich_background_script_editor" sys_domain="global" view="Default view">dc09f4262f283110b6ec70682799b6e7</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-14 21:22:52</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_tags</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-14 21:22:52</sys_created_on><sys_id>f79303d32f68b510b6ec70682799b607</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_x_rich_background_script_editor" sys_domain="global" view="Default view">dc09f4262f283110b6ec70682799b6e7</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-14 21:22:52</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-14 21:22:52</sys_created_on><sys_id>7b9303d32f68b510b6ec70682799b607</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_x_rich_background_script_editor" sys_domain="global" view="Default view">dc09f4262f283110b6ec70682799b6e7</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-14 21:22:52</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>f793c3532f68b510b6ec70682799b67b</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-14 21:22:52</sys_created_on><sys_id>fb9303d32f68b510b6ec70682799b607</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_x_rich_background_script_editor" sys_domain="global" view="Default view">dc09f4262f283110b6ec70682799b6e7</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-14 21:22:52</sys_updated_on><sys_user/><type>annotation</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.begin_split</element><position>6</position><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-14 21:22:52</sys_created_on><sys_id>7f9303d32f68b510b6ec70682799b607</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_x_rich_background_script_editor" sys_domain="global" view="Default view">dc09f4262f283110b6ec70682799b6e7</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-14 21:22:52</sys_updated_on><sys_user/><type>.begin_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>7</position><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-14 21:22:52</sys_created_on><sys_id>ff9303d32f68b510b6ec70682799b607</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_x_rich_background_script_editor" sys_domain="global" view="Default view">dc09f4262f283110b6ec70682799b6e7</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-14 21:22:52</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>fb93c3532f68b510b6ec70682799b67b</element><position>8</position><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-14 21:22:52</sys_created_on><sys_id>739303d32f68b510b6ec70682799b608</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_x_rich_background_script_editor" sys_domain="global" view="Default view">dc09f4262f283110b6ec70682799b6e7</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-14 21:22:52</sys_updated_on><sys_user/><type>annotation</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>9</position><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-14 21:22:52</sys_created_on><sys_id>f39303d32f68b510b6ec70682799b608</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_x_rich_background_script_editor" sys_domain="global" view="Default view">dc09f4262f283110b6ec70682799b6e7</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-14 21:22:52</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_script</element><position>10</position><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-14 21:22:52</sys_created_on><sys_id>779303d32f68b510b6ec70682799b608</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_x_rich_background_script_editor" sys_domain="global" view="Default view">dc09f4262f283110b6ec70682799b6e7</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-14 21:22:52</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_output</element><position>11</position><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-14 21:22:52</sys_created_on><sys_id>f79303d32f68b510b6ec70682799b608</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_x_rich_background_script_editor" sys_domain="global" view="Default view">dc09f4262f283110b6ec70682799b6e7</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-14 21:22:52</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>bf93c3532f68b510b6ec70682799b67b</element><position>12</position><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-14 21:22:52</sys_created_on><sys_id>7b9303d32f68b510b6ec70682799b608</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_x_rich_background_script_editor" sys_domain="global" view="Default view">dc09f4262f283110b6ec70682799b6e7</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-14 21:22:52</sys_updated_on><sys_user/><type>annotation</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_notes</element><position>13</position><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-14 21:22:52</sys_created_on><sys_id>fb9303d32f68b510b6ec70682799b608</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_x_rich_background_script_editor" sys_domain="global" view="Default view">dc09f4262f283110b6ec70682799b6e7</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-14 21:22:52</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>activity.xml</element><position>14</position><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-14 21:22:52</sys_created_on><sys_id>7f9303d32f68b510b6ec70682799b608</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter display_value="Activities (filtered)">444ea5c6bf310100e628555b3f0739d6</sys_ui_formatter><sys_ui_section caption="NULL" display_value="" name="u_x_rich_background_script_editor" sys_domain="global" view="Default view">dc09f4262f283110b6ec70682799b6e7</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-14 21:22:52</sys_updated_on><sys_user/><type>formatter</type></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>u_x_rich_background_script_editor</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-12 03:21:48</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>dc09f4262f283110b6ec70682799b6e7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_x_rich_background_script_editor</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_section_dc09f4262f283110b6ec70682799b6e7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-12 03:21:48</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>259701645</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:39</sys_created_on>
+<sys_id>421c18372f80ca14b6ec70682799b636</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189f5ee258a0000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:39</sys_updated_on>
+<table>u_x_rich_background_script_editor</table>
+<target_name>Rich Background Script Editor</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>739303d32068b510e75d66f81791670b</update_guid>
+<update_guid_history>739303d32068b510e75d66f81791670b:259701645,15c2c3533b68b510674fff51b5d445bc:1624531377,a592c353ee68b510616e423b2c8d7163:-315584063,dc624f138e68b510e0daffa2d54de18b:-1289431019,c5520b13fa68b5104b9225d29a66f337:-903666908,d5428b13bd68b5100ccb0686aa5a9b52:-261387943,a2320713ae68b5107a71622894630f22:2080852427,a222c7130c68b5100b622b0a3989f136:1341014582,d6fa786aa5283110a4708c6316a33a34:-1457291593,eeda746a7128311084162520b2c267b5:1416089873,3fe934e6ef283110f3f8fe4aac288d56:1554618708,14493c660f283110e63e9d9c4235482d:1284826864,600934666628311005b4e7d8675ac2fd:568664754</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_x_rich_background_script_editor_u_script</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="u_script" table="u_x_rich_background_script_editor"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice/><choice_field/><choice_table/><column_label>Script</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>u_script</element><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="Script">script</internal_type><mandatory>false</mandatory><max_length>4000</max_length><name>u_x_rich_background_script_editor</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-12 03:22:52</sys_created_on><sys_id>80493c662f283110b6ec70682799b608</sys_id><sys_name>Script</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_dictionary_u_x_rich_background_script_editor_u_script</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-12 03:24:57</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>251875400</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:39</sys_created_on>
+<sys_id>421cd8f32f80ca14b6ec70682799b6da</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189e7c690de0000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:39</sys_updated_on>
+<table>u_x_rich_background_script_editor</table>
+<target_name>Rich Background Script Editor.Script</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>62b97ca660283110c12c38984b427c55</update_guid>
+<update_guid_history>62b97ca660283110c12c38984b427c55:251875400,1c493c664c283110b051099b3cb23524:1291106351</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_9d20c5a22f683110b6ec70682799b6bb</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_security_acl"&gt;&lt;sys_security_acl action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;admin_overrides&gt;true&lt;/admin_overrides&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;condition/&gt;&lt;description&gt;Only admin users can use this tool.&lt;/description&gt;&lt;name&gt;u_x_rich_background_script_editor&lt;/name&gt;&lt;operation display_value="read"&gt;read&lt;/operation&gt;&lt;script&gt;&lt;![CDATA[answer = gs.isInteractive();]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_security_acl&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-08-12 03:53:00&lt;/sys_created_on&gt;&lt;sys_id&gt;9d20c5a22f683110b6ec70682799b6bb&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;u_x_rich_background_script_editor&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_security_acl_9d20c5a22f683110b6ec70682799b6bb&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-08-12 03:53:00&lt;/sys_updated_on&gt;&lt;type display_value="record"&gt;record&lt;/type&gt;&lt;/sys_security_acl&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1124220906</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:39</sys_created_on>
+<sys_id>421cd8f32f80ca14b6ec70682799b6dd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189e7e040390000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:39</sys_updated_on>
+<table>u_x_rich_background_script_editor</table>
+<target_name>u_x_rich_background_script_editor</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>6d2005e295683110246b11ec66e7f0c5</update_guid>
+<update_guid_history>6d2005e295683110246b11ec66e7f0c5:1124220906</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_522ef4ee2f283110b6ec70682799b698</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name/&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;true&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments/&gt;&lt;condition&gt;gs.hasRole("admin")&lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;format_for_configurable_workspace&gt;false&lt;/format_for_configurable_workspace&gt;&lt;hint/&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;Run&lt;/name&gt;&lt;onclick&gt;doRun()&lt;/onclick&gt;&lt;order&gt;-1000&lt;/order&gt;&lt;script&gt;&lt;![CDATA[function doRun() {	
+	
+	//used to build the progress indicator when running scripts.
+	var gdw = null;	
+
+	//clear any old messages from past runs
+	g_form.clearMessages();
+	g_form.hideAllFieldMsgs();
+	
+	//disable the script editor while sending command to server, and clear old output
+	g_form.setDisabled("u_script", true);
+	g_form.setValue("u_output", "");
+	
+	//start a modal progress indicator
+	gdw = new GlideDialogWindow("x_Rich_Editor_Progress_Indicator", true, 50, 50);
+	gdw.removeCloseDecoration();
+	gdw.setTitle("executing...");
+	gdw.render();
+
+	//Make the ajax call to the script include that runs the currently entered script.
+	//NOTE: as of at least Paris release, the render() method of GlideDialogWindow uses the main 
+	//UI thread to perform the rendering and so if we then make the getXMLWait() call then it has the 
+	//effect of blocking the rendering of the progress dialog.  To get around this we use the strategy
+	//of running the AJAX call sequence through a callback function to setTimeout() so the main 
+	//UI thread is released and won't become locked waiting for for the AJAX response.
+	setTimeout(function () {
+		try {
+			
+			//send ajax call with the current script.
+			var ga = new GlideAjax('xBackgroundScriptEditorUtil');
+			ga.addParam('sysparm_name','runScript');
+			ga.addParam('sysparm_script_text', g_form.getValue("u_script"));
+			ga.getXMLWait();
+
+			//decode the results into an object.
+			var ans = ga.getAnswer();
+
+			//if we got a null return then there's a major error (probably a bug in this interface).
+			//All we can do is notify user
+			if (ans == null) {
+				g_form.addErrorMessage("ERROR: NO RESPONSE FROM SERVICENOW");
+				return;
+			}
+
+			//decode to a JSON object.
+			ans = JSON.parse(ans);
+
+			//if the script had an error, notify the user
+			if (ans.success != true) {
+				g_form.showFieldMsg("u_script", "ERROR DURING SCRIPT EXECUTION: '" + ans.errMsg + "'", "error");
+				
+			//otherwise simply indicate success.
+			} else {
+				g_form.showFieldMsg("u_script", "Script run successful", "info");
+			}
+
+			//if there was any gs.log output from the script then write that back to the output
+			if (ans.outputLog) {
+				var finalOut = "";
+				for (var is = 0; is &lt; ans.outputLog.length; is++) {
+					
+					//begin each line with a heading cursor "&gt;&gt; " to denote a new line.
+					//somewhat similar to a shell prompt.
+					finalOut += "&gt;&gt; " + ans.outputLog[is] + "\n";
+				}
+				g_form.setValue("u_output", finalOut);
+			}
+
+		//if we get here there was a major client side issue (probably a bug in this interface).
+		//all we can do is tell the user.
+		} catch (ex2) {
+			g_form.addErrorMessage("CLIENT ERROR DURING EXECUTION: " + err);
+
+		//always close the progress window and re-enable the editor, regardless of execution success or failure.
+		} finally {
+			g_form.setDisabled("u_script", false);
+			gdw.destroy();
+		}
+
+	}, 500 /* NOTE: tested various timeouts and found that 1/2 second generally performed the best*/);
+}]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-08-12 03:45:05&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;522ef4ee2f283110b6ec70682799b698&lt;/sys_id&gt;&lt;sys_mod_count&gt;13&lt;/sys_mod_count&gt;&lt;sys_name&gt;Run&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_522ef4ee2f283110b6ec70682799b698&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-08-14 21:12:31&lt;/sys_updated_on&gt;&lt;table&gt;u_x_rich_background_script_editor&lt;/table&gt;&lt;ui11_compatible&gt;false&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>728940823</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:39</sys_created_on>
+<sys_id>461c18372f80ca14b6ec70682799b635</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189f5e4ace80000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:39</sys_updated_on>
+<table>u_x_rich_background_script_editor</table>
+<target_name>Run</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>1841cb9b3e28b510b313ff9f312d2f37</update_guid>
+<update_guid_history>1841cb9b3e28b510b313ff9f312d2f37:728940823,e3908f5b6d28b510ac3b03b53a4496e0:-407633248,2f50435fd028b51022424b77a87a4016:1127269992,662e765b0728b51030d984a9f1d5d72d:396104160,85adb297b828b51078c9689940572902:-250562760,028db21b3028b510064d7dfa1aa08cb8:396104160,a24dfad73528b51054d1b9700f3ae961:1869690618,7a7cba1f0c24b510cb5856319735b8e3:-925772466,096c72977f28b510524e936feb7640fa:1686565422,162c36db7324b510d01d2439ea87be67:-1574179676,549a1adb1a24b510d74eab9eb5446cda:-689096813,8c8a9a5b3124b510d03c8a8182af9687:-356842610,5bd856d74524b51065875bbd6e2eb4d4:716668406,6478125bb424b510fd1cb6d03995f977:2026296661,c4b796d73124b51020a64aba4611c84c:-13854603,fd779a975f24b5101dff708271786c59:154555157,14b6da17e824b510c8863ca059afdb70:716668406,0376d257f424b510f02a26c66a496135:-780104790,b146da172324b5103eee8d4bf74eb602:-551484483,75065a17c324b510d924164beb55c8f8:-628789546,49e556178324b51070c72112084068d5:282558921,9765921f6be87510974c28b771d5a202:-1640979001,80559a93dc24b510cd4799639f46dd99:-1521978293,6cc181662668311009bf247c4e9ca855:716668406,655e38eef92831104dee2b19a1137a05:-159286386</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_x_rich_background_script_editor_null</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="" table="u_x_rich_background_script_editor"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;attributes/&gt;&lt;audit&gt;true&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="Collection"&gt;collection&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_x_rich_background_script_editor&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-08-12 03:18:51&lt;/sys_created_on&gt;&lt;sys_id&gt;51583ce22f283110b6ec70682799b679&lt;/sys_id&gt;&lt;sys_name&gt;u_x_rich_background_script_editor&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_x_rich_background_script_editor_null&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-08-12 03:30:23&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1391980600</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:39</sys_created_on>
+<sys_id>461cd8f32f80ca14b6ec70682799b6d9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189e7cb8c420000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:39</sys_updated_on>
+<table>u_x_rich_background_script_editor</table>
+<target_name>Rich Background Script Editor</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>16fa7c2a7a2831103fb66e569c0be17c</update_guid>
+<update_guid_history>16fa7c2a7a2831103fb66e569c0be17c:-1391980600,e9583ce265283110869bc85d1a235d95:-324995345</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_0c3081a22f683110b6ec70682799b63f</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_security_acl"&gt;&lt;sys_security_acl action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;admin_overrides&gt;true&lt;/admin_overrides&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;condition/&gt;&lt;description&gt;Only admin users can use this tool.&lt;/description&gt;&lt;name&gt;u_x_rich_background_script_editor&lt;/name&gt;&lt;operation display_value="write"&gt;write&lt;/operation&gt;&lt;script&gt;&lt;![CDATA[answer = gs.isInteractive();]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_security_acl&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-08-12 03:53:11&lt;/sys_created_on&gt;&lt;sys_id&gt;0c3081a22f683110b6ec70682799b63f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;u_x_rich_background_script_editor&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_security_acl_0c3081a22f683110b6ec70682799b63f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-08-12 03:53:11&lt;/sys_updated_on&gt;&lt;type display_value="record"&gt;record&lt;/type&gt;&lt;/sys_security_acl&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-784814682</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:39</sys_created_on>
+<sys_id>461cd8f32f80ca14b6ec70682799b6dc</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189e7e06a900000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:39</sys_updated_on>
+<table>u_x_rich_background_script_editor</table>
+<target_name>u_x_rich_background_script_editor</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>c83085e2096831101bcae87352f37448</update_guid>
+<update_guid_history>c83085e2096831101bcae87352f37448:-784814682</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_1520c5a22f683110b6ec70682799b6bc</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-12 03:53:00</sys_created_on><sys_id>1520c5a22f683110b6ec70682799b6bc</sys_id><sys_mod_count>0</sys_mod_count><sys_name>.admin</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="">9d20c5a22f683110b6ec70682799b6bb</sys_security_acl><sys_update_name>sys_security_acl_role_1520c5a22f683110b6ec70682799b6bc</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-12 03:53:00</sys_updated_on><sys_user_role display_value="admin" name="admin">2831a114c611228501d4ea6c309d626d</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>-1323822991</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:39</sys_created_on>
+<sys_id>4a1c18372f80ca14b6ec70682799b634</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189e7e03ff20000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:39</sys_updated_on>
+<table>9d20c5a22f683110b6ec70682799b6bb</table>
+<target_name>.admin</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>a12005e24b6831101c198618e32735c3</update_guid>
+<update_guid_history>a12005e24b6831101c198618e32735c3:-1323822991</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_attachment_doc_28b92f4e0f286240e608b36be1050ea7</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_attachment_doc action="INSERT_OR_UPDATE">
+<data>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</data>
+<length>3372</length>
+<position>2</position>
+<sys_attachment display_value="image" sys_id="e0b92f4e0f286240e608b36be1050ea7">e0b92f4e0f286240e608b36be1050ea7</sys_attachment>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2016-07-13 04:31:49</sys_created_on>
+<sys_id>28b92f4e0f286240e608b36be1050ea7</sys_id>
+</sys_attachment_doc></record_update>]]></payload>
+<payload_hash>975761536</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:39</sys_created_on>
+<sys_id>4a1cd8f32f80ca14b6ec70682799b6d8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189e7e971020000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:39</sys_updated_on>
+<table/>
+<target_name>28b92f4e0f286240e608b36be1050ea7</target_name>
+<type>Attachment Document</type>
+<update_domain>global</update_domain>
+<update_guid>60720de699683110b4b1cf809bb18237</update_guid>
+<update_guid_history>60720de699683110b4b1cf809bb18237:975761536</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_a52bb06a2f283110b6ec70682799b643</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Rich Background Script Editor activity formatter fields</description><ignore_cache>false</ignore_cache><is_private>false</is_private><name>glide.ui.u_x_rich_background_script_editor_activity.fields</name><read_roles/><suffix>global</suffix><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-12 03:31:10</sys_created_on><sys_id>a52bb06a2f283110b6ec70682799b643</sys_id><sys_mod_count>1</sys_mod_count><sys_name>glide.ui.u_x_rich_background_script_editor_activity.fields</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_a52bb06a2f283110b6ec70682799b643</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-12 03:31:37</sys_updated_on><type>string</type><value>u_notes</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=a52bb06a2f283110b6ec70682799b643"/></record_update>]]></payload>
+<payload_hash>1234414661</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:39</sys_created_on>
+<sys_id>4a1cd8f32f80ca14b6ec70682799b6db</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189e7ccb15c0000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:39</sys_updated_on>
+<table/>
+<target_name>glide.ui.u_x_rich_background_script_editor_activity.fields</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>2c4b30aabf283110a3769841ce8e7438</update_guid>
+<update_guid_history>2c4b30aabf283110a3769841ce8e7438:1234414661,0e2bb06ad7283110f192641eb02e6349:-907193203</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_x_rich_background_script_editor_u_output_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_output" label="Output" language="en" table="u_x_rich_background_script_editor"><sys_documentation action="INSERT_OR_UPDATE"><element>u_output</element><help/><hint/><label>Output</label><language>en</language><name>u_x_rich_background_script_editor</name><plural>Outputs</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-12 03:25:51</sys_created_on><sys_id>7be934e62f283110b6ec70682799b63a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Output</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_x_rich_background_script_editor_u_output_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-12 03:25:51</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-728524881</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:39</sys_created_on>
+<sys_id>4e1cd8f32f80ca14b6ec70682799b6da</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189e7c766380000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:39</sys_updated_on>
+<table>u_x_rich_background_script_editor</table>
+<target_name>Rich Background Script Editor.Output</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>b3e934e628283110f38d204eb442fd53</update_guid>
+<update_guid_history>b3e934e628283110f38d204eb442fd53:-728524881</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_e510c1e22f683110b6ec70682799b61d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-12 03:52:44</sys_created_on><sys_id>e510c1e22f683110b6ec70682799b61d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>.admin</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="">6110c1e22f683110b6ec70682799b61d</sys_security_acl><sys_update_name>sys_security_acl_role_e510c1e22f683110b6ec70682799b61d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-12 03:52:44</sys_updated_on><sys_user_role display_value="admin" name="admin">2831a114c611228501d4ea6c309d626d</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>1719567053</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:39</sys_created_on>
+<sys_id>821c18372f80ca14b6ec70682799b635</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189e7e003ef0000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:39</sys_updated_on>
+<table>6110c1e22f683110b6ec70682799b61d</table>
+<target_name>.admin</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>7110c1e2136831106cec26550a9b7d1f</update_guid>
+<update_guid_history>7110c1e2136831106cec26550a9b7d1f:1719567053</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_object_dc1874e22f283110b6ec70682799b63d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access>public</access><actions_access>false</actions_access><alter_access>false</alter_access><caller_access/><client_scripts_access>false</client_scripts_access><configuration_access>false</configuration_access><create_access>false</create_access><create_access_controls>false</create_access_controls><delete_access>false</delete_access><is_extendable>false</is_extendable><label>Rich Background Script Editor</label><live_feed_enabled>false</live_feed_enabled><name>u_x_rich_background_script_editor</name><number_ref/><provider_class/><read_access>false</read_access><scriptable_table>false</scriptable_table><super_class/><sys_class_name>sys_db_object</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-12 03:18:51</sys_created_on><sys_id>dc1874e22f283110b6ec70682799b63d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Rich Background Script Editor</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_object_dc1874e22f283110b6ec70682799b63d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-12 03:18:51</sys_updated_on><update_access>false</update_access><user_role/><ws_access>false</ws_access></sys_db_object></record_update>]]></payload>
+<payload_hash>-1911923545</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:39</sys_created_on>
+<sys_id>821cd8f32f80ca14b6ec70682799b6d9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189e7c101fe0000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:39</sys_updated_on>
+<table>u_x_rich_background_script_editor</table>
+<target_name>Rich Background Script Editor</target_name>
+<type>Table</type>
+<update_domain>global</update_domain>
+<update_guid>61583ce24d283110e57d6f0845556399</update_guid>
+<update_guid_history>61583ce24d283110e57d6f0845556399:-1911923545</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_f4ae74222f683110b6ec70682799b6fd</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.xBackgroundScriptEditorUtil&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description&gt;Utility functions for the Rich Background Script Editor. &lt;/description&gt;&lt;name&gt;xBackgroundScriptEditorUtil&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var xBackgroundScriptEditorUtil = Class.create();
+xBackgroundScriptEditorUtil.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+	
+	runScript: function() {
+		
+		//build return object
+		var ret = new xBackgroundScriptEditorUtil.runScriptReturn();
+		
+		//backing array to store any statements logged with gs.log
+		var stdout = [];
+		try {
+			
+			//ensure user has admin before allowing them to execute scripts.
+			if (!gs.hasRole("admin")) {
+				throw new GenericException("YOU DO NOT HAVE PERMISSION TO EXECUTE BACKGROUND SCRIPTS");
+			}
+			
+			//get the script the user sent.
+			var scr = "" + this.getParameter('sysparm_script_text');
+			
+			//if they sent no input then there's nothing to do.
+			if (!(JSUtil.nil(scr) || scr == "")) {
+			
+				//it is desired that any gs.log statements in the script will output the results of that
+				//log to the screen upon completion, similar to the OOB "Scripts - Background" tool that
+				//this the Rich background script editor is inspired from.  However, in order providing
+				//that requires being able to intercept all gs.log calls to build a buffer of statements
+				//to show to the ser. Attempts to redefine the gs.log function into something that captures
+				//the statements for us before logging to the sys log failed, most likely because that 
+				//function is backed by a Java class and doesn't allow those functions to be redefined.
+				//As a best-effort workaround, we instead do a simple replace of all instances of calls
+				//to gs.log with a predefined function, which adds the input to our running buffer of 
+				//statements to display on the script results, then logs it with gs.log to maintain 
+				//consistent behavior of all gs.log() calls being saved to the system log.  Because we're
+				//doing simple string replacement we need to use a function name not likely to be found in
+				//the user's script, hence the use of _____ in the naming of the functions and input variables.
+				function _____log(_____inp, _____src) {
+					stdout.push(_____inp) ;
+					gs.log(_____inp, _____src);
+				}			
+				var gsLogReplaceFunc = /gs\.log[(]/g;
+				scr = scr.replace(gsLogReplaceFunc, "_____log(");
+
+				//define the function wrapper for eval to call
+				var evalFun = "doFunc(); function doFunc() {" + scr + "}";
+
+				//run the eval.
+				eval(evalFun);
+
+				//set params on the ret object and return to client.
+				ret.outputLog = stdout;
+			}			
+			
+		} catch (err) {
+			
+			//if an execution error occured, send success=failed and the error message that caused
+			//the issue
+			ret.success = false;
+			ret.errMsg = "" + err;
+		}
+		return JSON.stringify(ret);
+	},
+	
+	type: 'xBackgroundScriptEditorUtil'
+});
+
+/**
+ * Defines the structure of the return object that calls to runScript() return to the AJAX client.
+ */
+xBackgroundScriptEditorUtil.runScriptReturn = Class.create();
+xBackgroundScriptEditorUtil.runScriptReturn.prototype = {
+	
+	initialize : function() {
+		this.success = true;  //assume success unless an error occurs
+	},
+	
+	//boolean indicating if the script run was successful or not.
+	success: null,
+
+	//if the script run throws an error, this is where that error message will be sent back to the client
+	//for display to the user.
+	errorMsg: null,
+
+	//If the script run is successful, this attribute will contain the output to be displayed to the user 
+	//in the console output box.
+	outputLog: null,
+	
+	type: "xBackgroundScriptEditorUtil.runScriptReturn"
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-08-12 03:49:09&lt;/sys_created_on&gt;&lt;sys_id&gt;f4ae74222f683110b6ec70682799b6fd&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;xBackgroundScriptEditorUtil&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_f4ae74222f683110b6ec70682799b6fd&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-08-14 21:34:25&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-926876856</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:39</sys_created_on>
+<sys_id>821cd8f32f80ca14b6ec70682799b6dc</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189f5f8b7df0000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:39</sys_updated_on>
+<table/>
+<target_name>xBackgroundScriptEditorUtil</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_guid>49460317ea68b510ae9653635adc1c9a</update_guid>
+<update_guid_history>49460317ea68b510ae9653635adc1c9a:-926876856,9a3607139e68b51098c1dd4d7333e9ac:-1266777878,814ff462256831102d124a6bb3772d24:2030018266</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_attachment_doc_24b92f4e0f286240e608b36be1050ea7</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_attachment_doc action="INSERT_OR_UPDATE">
+<data>H4sIAAAAAAAAAA==</data>
+<length>16</length>
+<position>0</position>
+<sys_attachment display_value="image" sys_id="e0b92f4e0f286240e608b36be1050ea7">e0b92f4e0f286240e608b36be1050ea7</sys_attachment>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2016-07-13 04:31:49</sys_created_on>
+<sys_id>24b92f4e0f286240e608b36be1050ea7</sys_id>
+</sys_attachment_doc></record_update>]]></payload>
+<payload_hash>-244666141</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:39</sys_created_on>
+<sys_id>861cd8f32f80ca14b6ec70682799b6d8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189e7e970d20000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:39</sys_updated_on>
+<table/>
+<target_name>24b92f4e0f286240e608b36be1050ea7</target_name>
+<type>Attachment Document</type>
+<update_domain>global</update_domain>
+<update_guid>60720de6796831101696189e42f1f134</update_guid>
+<update_guid_history>60720de6796831101696189e42f1f134:-244666141</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_x_rich_background_script_editor__en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="" label="Rich Background Script Editor" language="en" table="u_x_rich_background_script_editor"><sys_documentation action="INSERT_OR_UPDATE"><element/><help/><hint/><label>Rich Background Script Editor</label><language>en</language><name>u_x_rich_background_script_editor</name><plural>Rich Background Script Editors</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-12 03:18:52</sys_created_on><sys_id>e9583ce22f283110b6ec70682799b681</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Rich Background Script Editor</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_x_rich_background_script_editor__en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-12 03:18:52</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>1180088835</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:39</sys_created_on>
+<sys_id>861cd8f32f80ca14b6ec70682799b6db</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189e7c101d60000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:39</sys_updated_on>
+<table>u_x_rich_background_script_editor</table>
+<target_name>Rich Background Script Editor</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>e5583ce2b42831109b1d2baa01b13197</update_guid>
+<update_guid_history>e5583ce2b42831109b1d2baa01b13197:1180088835</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_x_rich_background_script_editor_u_notes_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_notes" label="Notes" language="en" table="u_x_rich_background_script_editor"><sys_documentation action="INSERT_OR_UPDATE"><element>u_notes</element><help/><hint/><label>Notes</label><language>en</language><name>u_x_rich_background_script_editor</name><plural>Notes</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-12 03:29:51</sys_created_on><sys_id>dada746a2f283110b6ec70682799b6a6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Notes</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_x_rich_background_script_editor_u_notes_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-12 03:29:51</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-36720054</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:39</sys_created_on>
+<sys_id>8a1cd8f32f80ca14b6ec70682799b6da</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189e7cb0f660000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:39</sys_updated_on>
+<table>u_x_rich_background_script_editor</table>
+<target_name>Rich Background Script Editor.Notes</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>2ada746a09283110ad6b436dde2730b2</update_guid>
+<update_guid_history>2ada746a09283110ad6b436dde2730b2:-36720054</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_page_1d1181662f683110b6ec70682799b640</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_page"&gt;&lt;sys_ui_page action="INSERT_OR_UPDATE"&gt;&lt;category&gt;general&lt;/category&gt;&lt;client_script/&gt;&lt;description&gt;Thus UI page displays a simple rolling progress indicator.  It is intended to be used in a modal GlideDialogWindow in situations where a blocking progress indicator is needed, usually for AJAX operations that require the user to wait.&lt;/description&gt;&lt;direct&gt;true&lt;/direct&gt;&lt;endpoint/&gt;&lt;html&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;img src="xRichEditorProgressIndicator.gif" width="32px" height="32px"/&gt;]]&gt;&lt;/html&gt;&lt;name&gt;x_Rich_Editor_Progress_Indicator&lt;/name&gt;&lt;processing_script/&gt;&lt;sys_class_name&gt;sys_ui_page&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-08-12 03:57:50&lt;/sys_created_on&gt;&lt;sys_id&gt;1d1181662f683110b6ec70682799b640&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_Rich_Editor_Progress_Indicator&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_page_1d1181662f683110b6ec70682799b640&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-08-14 18:12:27&lt;/sys_updated_on&gt;&lt;/sys_ui_page&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1812911353</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:39</sys_created_on>
+<sys_id>8e1c18372f80ca14b6ec70682799b635</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189f53fd1e80000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:39</sys_updated_on>
+<table/>
+<target_name>x_Rich_Editor_Progress_Indicator</target_name>
+<type>UI Page</type>
+<update_domain>global</update_domain>
+<update_guid>a608561b5e24b510c8af0a24725eb30d</update_guid>
+<update_guid_history>a608561b5e24b510c8af0a24725eb30d:1812911353,47471e577824b510f1afb35828e4c143:-1616273803,be179a971824b510aee10b702eeff145:-147575533,d1a2812a33683110045d0fd839a31e8c:176525830,6441c566ec6831101c2a5c099dcc6314:856721396</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_x_rich_background_script_editor_u_output</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="u_output" table="u_x_rich_background_script_editor"><active>true</active><array>false</array><attributes>edge_encryption_enabled=true</attributes><audit>false</audit><calculation/><choice/><choice_field/><choice_table/><column_label>Output</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>u_output</element><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="String">string</internal_type><mandatory>false</mandatory><max_length>1024</max_length><name>u_x_rich_background_script_editor</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-12 03:25:51</sys_created_on><sys_id>3be9f0e62f283110b6ec70682799b6e1</sys_id><sys_name>Output</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_dictionary_u_x_rich_background_script_editor_u_output</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-12 03:26:57</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>1979195510</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:39</sys_created_on>
+<sys_id>8e1cd8f32f80ca14b6ec70682799b6d9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189e7c867540000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:39</sys_updated_on>
+<table>u_x_rich_background_script_editor</table>
+<target_name>Rich Background Script Editor.Output</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>c83abce68728311084b5ecb2ec580889</update_guid>
+<update_guid_history>c83abce68728311084b5ecb2ec580889:1979195510,97f9b4e6b02831109e799e3fecb59545:-1128545008,b3e934e626283110b5b9fe0b5aebb945:656527317</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_6110c1e22f683110b6ec70682799b61d</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_security_acl"&gt;&lt;sys_security_acl action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;admin_overrides&gt;true&lt;/admin_overrides&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;condition/&gt;&lt;description&gt;Only admin users can use this tool.&lt;/description&gt;&lt;name&gt;u_x_rich_background_script_editor&lt;/name&gt;&lt;operation display_value="delete"&gt;delete&lt;/operation&gt;&lt;script&gt;&lt;![CDATA[answer = gs.isInteractive();]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_security_acl&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-08-12 03:52:45&lt;/sys_created_on&gt;&lt;sys_id&gt;6110c1e22f683110b6ec70682799b61d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;u_x_rich_background_script_editor&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_security_acl_6110c1e22f683110b6ec70682799b61d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-08-12 03:52:45&lt;/sys_updated_on&gt;&lt;type display_value="record"&gt;record&lt;/type&gt;&lt;/sys_security_acl&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1740610708</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:39</sys_created_on>
+<sys_id>8e1cd8f32f80ca14b6ec70682799b6dc</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189e7e004320000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:39</sys_updated_on>
+<table>u_x_rich_background_script_editor</table>
+<target_name>u_x_rich_background_script_editor</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>3d10c1e2a46831102ae2f290690b8421</update_guid>
+<update_guid_history>3d10c1e2a46831102ae2f290690b8421:1740610708</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_module_f4cd8d6a2fa83110b6ec70682799b6b0</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="System Definition">c7fd1762c0a80166015926d15731965d</application><assessment/><device_type/><filter/><hint>Allows an admin user to write and execute freeform script</hint><homepage/><image>images/icons/script.gif</image><link_type>NEW</link_type><map_page/><mobile_title>Scripts - Background</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>u_x_rich_background_script_editor</name><order>54</order><override_menu_roles>false</override_menu_roles><query>sys.scripts.do</query><report/><roles>admin</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-12 04:52:29</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>f4cd8d6a2fa83110b6ec70682799b6b0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Scripts - Background (Rich) - New</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_app_module_f4cd8d6a2fa83110b6ec70682799b6b0</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-12 04:52:29</sys_updated_on><timeline_page/><title>Scripts - Background (Rich) - New</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+<payload_hash>-70236511</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:39</sys_created_on>
+<sys_id>c21cd8f32f80ca14b6ec70682799b6d8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189e816b64f0000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:39</sys_updated_on>
+<table>u_x_rich_background_script_editor</table>
+<target_name>Scripts - Background (Rich) - New</target_name>
+<type>Module</type>
+<update_domain>global</update_domain>
+<update_guid>70cd8d6af2a831101c24c999343572b2</update_guid>
+<update_guid_history>70cd8d6af2a831101c24c999343572b2:-70236511</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_x_rich_background_script_editor_u_tags_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_tags" label="Tags" language="en" table="u_x_rich_background_script_editor"><sys_documentation action="INSERT_OR_UPDATE"><element>u_tags</element><help/><hint/><label>Tags</label><language>en</language><name>u_x_rich_background_script_editor</name><plural>Tags</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-12 03:22:52</sys_created_on><sys_id>88493c662f283110b6ec70682799b613</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Tags</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_x_rich_background_script_editor_u_tags_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-12 03:22:52</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>1920971418</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:39</sys_created_on>
+<sys_id>c21cd8f32f80ca14b6ec70682799b6db</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189e7c4abe20000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:39</sys_updated_on>
+<table>u_x_rich_background_script_editor</table>
+<target_name>Rich Background Script Editor.Tags</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>50493c6636283110e2e2834620afe428</update_guid>
+<update_guid_history>50493c6636283110e2e2834620afe428:1920971418</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_x_rich_background_script_editor_u_name_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_name" label="Name" language="en" table="u_x_rich_background_script_editor"><sys_documentation action="INSERT_OR_UPDATE"><element>u_name</element><help/><hint/><label>Name</label><language>en</language><name>u_x_rich_background_script_editor</name><plural>Names</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-12 03:22:52</sys_created_on><sys_id>8c493c662f283110b6ec70682799b60e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Name</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_x_rich_background_script_editor_u_name_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-12 03:22:52</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-657896357</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:39</sys_created_on>
+<sys_id>c61cd8f32f80ca14b6ec70682799b6da</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189e7c4abca0000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:39</sys_updated_on>
+<table>u_x_rich_background_script_editor</table>
+<target_name>Rich Background Script Editor.Name</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>54493c66362831109a7a079df3eded26</update_guid>
+<update_guid_history>54493c66362831109a7a079df3eded26:-657896357</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_list_u_x_rich_background_script_editor_null</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_list parent="" relationship="" sys_domain="global" table="u_x_rich_background_script_editor" version="2" view=""><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>u_name</element><list_id display_value="u_x_rich_background_script_editor" element="NULL" name="u_x_rich_background_script_editor" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9a9085e22f683110b6ec70682799b618</list_id><max_value>false</max_value><min_value>false</min_value><position>0</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-12 03:54:58</sys_created_on><sys_id>929085e22f683110b6ec70682799b619</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-12 03:54:58</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>u_tags</element><list_id display_value="u_x_rich_background_script_editor" element="NULL" name="u_x_rich_background_script_editor" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9a9085e22f683110b6ec70682799b618</list_id><max_value>false</max_value><min_value>false</min_value><position>1</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-12 03:54:58</sys_created_on><sys_id>169085e22f683110b6ec70682799b619</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-12 03:54:58</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>sys_created_on</element><list_id display_value="u_x_rich_background_script_editor" element="NULL" name="u_x_rich_background_script_editor" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9a9085e22f683110b6ec70682799b618</list_id><max_value>false</max_value><min_value>false</min_value><position>2</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-12 03:54:58</sys_created_on><sys_id>969085e22f683110b6ec70682799b619</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-12 03:54:58</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>sys_created_by</element><list_id display_value="u_x_rich_background_script_editor" element="NULL" name="u_x_rich_background_script_editor" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9a9085e22f683110b6ec70682799b618</list_id><max_value>false</max_value><min_value>false</min_value><position>3</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-12 03:54:58</sys_created_on><sys_id>1a9085e22f683110b6ec70682799b619</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-12 03:54:58</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>sys_updated_on</element><list_id display_value="u_x_rich_background_script_editor" element="NULL" name="u_x_rich_background_script_editor" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9a9085e22f683110b6ec70682799b618</list_id><max_value>false</max_value><min_value>false</min_value><position>4</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-12 03:54:58</sys_created_on><sys_id>9a9085e22f683110b6ec70682799b619</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-12 03:54:58</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>sys_updated_by</element><list_id display_value="u_x_rich_background_script_editor" element="NULL" name="u_x_rich_background_script_editor" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9a9085e22f683110b6ec70682799b618</list_id><max_value>false</max_value><min_value>false</min_value><position>5</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-12 03:54:58</sys_created_on><sys_id>1e9085e22f683110b6ec70682799b619</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-12 03:54:58</sys_updated_on></sys_ui_list_element><sys_ui_list action="INSERT_OR_UPDATE"><average_value>false</average_value><element/><max_value>false</max_value><min_value>false</min_value><name>u_x_rich_background_script_editor</name><parent/><position/><relationship/><sum>false</sum><sys_class_name>sys_ui_list</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-12 03:54:58</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>9a9085e22f683110b6ec70682799b618</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_x_rich_background_script_editor</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_list_u_x_rich_background_script_editor_null</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-12 03:54:58</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_list></sys_ui_list></record_update>]]></payload>
+<payload_hash>1967133808</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:39</sys_created_on>
+<sys_id>ca1c18372f80ca14b6ec70682799b635</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189e7e20d070000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:39</sys_updated_on>
+<table>u_x_rich_background_script_editor</table>
+<target_name>Rich Background Script Editor</target_name>
+<type>List Layout</type>
+<update_domain>global</update_domain>
+<update_guid>5a9085e2136831105283efeff44f441b</update_guid>
+<update_guid_history>5a9085e2136831105283efeff44f441b:1967133808,b31eb4eee1283110a3312dab4ac11031:801574971,53f83466c2283110f5b6f3144ebc7469:-789395553</update_guid_history>
+<update_set display_value=""/>
+<view>Default view</view>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_x_rich_background_script_editor_u_notes</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="u_notes" table="u_x_rich_background_script_editor"><active>true</active><array>false</array><attributes>edge_encryption_enabled=true</attributes><audit>false</audit><calculation/><choice>0</choice><choice_field/><choice_table/><column_label>Notes</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>u_notes</element><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="">journal_input</internal_type><mandatory>false</mandatory><max_length>40</max_length><name>u_x_rich_background_script_editor</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-12 03:29:51</sys_created_on><sys_id>56da746a2f283110b6ec70682799b628</sys_id><sys_name>Notes</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_dictionary_u_x_rich_background_script_editor_u_notes</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-12 03:29:51</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>-438481956</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:39</sys_created_on>
+<sys_id>ca1cd8f32f80ca14b6ec70682799b6d9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189e7cb0f540000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:39</sys_updated_on>
+<table>u_x_rich_background_script_editor</table>
+<target_name>Rich Background Script Editor.Notes</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>eeda746a4728311073a76880cc44a8b0</update_guid>
+<update_guid_history>eeda746a4728311073a76880cc44a8b0:-438481956</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_414ff0ee2f283110b6ec70682799b65a</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_security_acl"&gt;&lt;sys_security_acl action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;admin_overrides&gt;true&lt;/admin_overrides&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;condition/&gt;&lt;description&gt;Only callable by admin users.&lt;/description&gt;&lt;name&gt;xBackgroundScriptEditorUtil&lt;/name&gt;&lt;operation display_value="execute"&gt;execute&lt;/operation&gt;&lt;script&gt;&lt;![CDATA[//Don't want wayward integrations calling this to execute arbitrary scripts!
+answer = gs.isInteractive();]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_security_acl&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-08-12 03:49:09&lt;/sys_created_on&gt;&lt;sys_id&gt;414ff0ee2f283110b6ec70682799b65a&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;xBackgroundScriptEditorUtil&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_security_acl_414ff0ee2f283110b6ec70682799b65a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-08-12 04:12:18&lt;/sys_updated_on&gt;&lt;type display_value="client_callable_script_include"&gt;client_callable_script_include&lt;/type&gt;&lt;/sys_security_acl&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1095626219</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:39</sys_created_on>
+<sys_id>ca1cd8f32f80ca14b6ec70682799b6dc</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189e7f1ec3b0000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:39</sys_updated_on>
+<table>xBackgroundScriptEditorUtil</table>
+<target_name>xBackgroundScriptEditorUtil</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>d89449ea6268311033a6e5ba8399cea3</update_guid>
+<update_guid_history>d89449ea6268311033a6e5ba8399cea3:-1095626219,cd4ff0ee9c28311039722345207ac65c:-1784942195</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_bfcfb4a22f683110b6ec70682799b696</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-08-12 03:52:10</sys_created_on><sys_id>bfcfb4a22f683110b6ec70682799b696</sys_id><sys_mod_count>0</sys_mod_count><sys_name>.admin</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="">32cf78a22f683110b6ec70682799b6ea</sys_security_acl><sys_update_name>sys_security_acl_role_bfcfb4a22f683110b6ec70682799b696</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-08-12 03:52:10</sys_updated_on><sys_user_role display_value="admin" name="admin">2831a114c611228501d4ea6c309d626d</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>1828882549</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:39</sys_created_on>
+<sys_id>ce1c18372f80ca14b6ec70682799b634</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189e7df7bd20000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:39</sys_updated_on>
+<table>32cf78a22f683110b6ec70682799b6ea</table>
+<target_name>.admin</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>19ffb4a209683110f1f3db835036f89c</update_guid>
+<update_guid_history>19ffb4a209683110f1f3db835036f89c:1828882549</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_attachment_e0b92f4e0f286240e608b36be1050ea7</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_attachment action="INSERT_OR_UPDATE">
+<average_image_color/>
+<chunk_size_bytes/>
+<compressed>true</compressed>
+<content_type>image/gif</content_type>
+<file_name>image</file_name>
+<hash/>
+<image_height/>
+<image_width/>
+<size_bytes>5532</size_bytes>
+<size_compressed>5337</size_compressed>
+<state>available</state>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2016-07-13 04:31:49</sys_created_on>
+<sys_id>e0b92f4e0f286240e608b36be1050ea7</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_updated_by>guest</sys_updated_by>
+<sys_updated_on>2023-08-12 04:00:23</sys_updated_on>
+<table_name>ZZ_YYdb_image</table_name>
+<table_sys_id>ad89eb4e0f286240e608b36be1050edc</table_sys_id>
+</sys_attachment></record_update>]]></payload>
+<payload_hash>1592519338</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:39</sys_created_on>
+<sys_id>ce1cd8f32f80ca14b6ec70682799b6d8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189e7e970bb0000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:39</sys_updated_on>
+<table>ZZ_YYdb_image</table>
+<target_name>image</target_name>
+<type>Attachment</type>
+<update_domain>global</update_domain>
+<update_guid>a4720de6b8683110694e2af03f4b6e32</update_guid>
+<update_guid_history>a4720de6b8683110694e2af03f4b6e32:1592519338</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_bd8d3c6e2f283110b6ec70682799b6e1</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;u_x_rich_background_script_editor&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Clear Output on save&lt;/name&gt;&lt;order&gt;999&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[/*
+* UI feature - Since this tool is meant to be an interactive "terminal" type code editor, we don't 
+* really want output from past runs of the script to persist over time, so this business rule simply ensures
+* that any output from recent runs is cleared when the script is saved.
+*/
+(function executeRule(current, previous) {
+	current.u_output = "";
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-08-12 03:42:21&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;bd8d3c6e2f283110b6ec70682799b6e1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Clear Output on save&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_bd8d3c6e2f283110b6ec70682799b6e1&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-08-12 03:42:21&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=bd8d3c6e2f283110b6ec70682799b6e1"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>993228870</payload_hash>
+<remote_update_set display_value="Rich Script Editor 0.6 (github.com/derekpage3)">061cd8f32f80ca14b6ec70682799b6d7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>github.com/derekpage3</sys_created_by>
+<sys_created_on>2024-02-05 22:07:39</sys_created_on>
+<sys_id>ce1cd8f32f80ca14b6ec70682799b6db</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>189e7d6814f0000001</sys_recorded_at>
+<sys_updated_by>github.com/derekpage3</sys_updated_by>
+<sys_updated_on>2024-02-05 22:07:39</sys_updated_on>
+<table>u_x_rich_background_script_editor</table>
+<target_name>Clear Output on save</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>e5bd30aa282831105616b1a34fe8a52e</update_guid>
+<update_guid_history>e5bd30aa282831105616b1a34fe8a52e:993228870</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
