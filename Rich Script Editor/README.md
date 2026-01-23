@@ -1,3 +1,5 @@
+<span style="color:blue">some *blue* text</span>.
+
 <p style="color: red"><b>WARNING:</b> DO NOT INSTALL THIS ON REGULAR CUSTOMER INSTANCES, AS THIS TOOL MAY INTRODUCE POTENTIAL SECURITY VULNERABILITIES THAT ARE NOT ACCEPTABLE IN A REAL ENVIRONMENT WITH CUSTOMER DATA IN IT.  THIS TOOL IS ONLY INTENDED FOR USE IN A PERSONAL DEVELOPER INSTANCE WITH NO SENSITIVE DATA IN IT!  WHILE BASIC CUSTOMARY EFFORTS HAVE BEEN MADE TO SECURE IT, <u>THERE ARE ABSOLUTELY NO SECURITY GUARANTEES WITH IT INSTALLED ON AN INSTANCE.</u></p>
 
 This package provides a new experimental background script console, similar to the out of box "Scripts - Background" tool provided by ServiceNow, but with the following enhancements:
