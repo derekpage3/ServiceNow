@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2026-01-23 04:55:37">
+<sys_ui_action action="INSERT_OR_UPDATE">
+<action_name/>
+<active>true</active>
+<client>true</client>
+<client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+<comments/>
+<condition>gs.hasRole("admin")</condition>
+<form_action>true</form_action>
+<form_button>true</form_button>
+<form_button_v2>false</form_button_v2>
+<form_context_menu>false</form_context_menu>
+<form_link>false</form_link>
+<form_menu_button_v2>false</form_menu_button_v2>
+<form_style/>
+<format_for_configurable_workspace>false</format_for_configurable_workspace>
+<hint/>
+<isolate_script>true</isolate_script>
+<list_action>false</list_action>
+<list_banner_button>false</list_banner_button>
+<list_button>false</list_button>
+<list_choice>false</list_choice>
+<list_context_menu>false</list_context_menu>
+<list_link>false</list_link>
+<list_save_with_form_button>false</list_save_with_form_button>
+<list_style/>
+<messages/>
+<name>Run</name>
+<onclick>doRun()</onclick>
+<order>-1000</order>
+<script><![CDATA[function doRun() {	
+	
+	//used to build the progress indicator when running scripts.
+	var gdw = null;	
+
+	//clear any old messages from past runs
+	g_form.clearMessages();
+	g_form.hideAllFieldMsgs();
+	
+	//disable the script editor while sending command to server, and clear old output
+	g_form.setDisabled("u_script", true);
+	g_form.setValue("u_output", "");
+	
+	//start a modal progress indicator
+	gdw = new GlideDialogWindow("x_Rich_Editor_Progress_Indicator", true, 50, 50);
+	gdw.removeCloseDecoration();
+	gdw.setTitle("executing...");
+	gdw.render();
+
+	//Make the ajax call to the script include that runs the currently entered script.
+	//NOTE: as of at least Paris release, the render() method of GlideDialogWindow uses the main 
+	//UI thread to perform the rendering and so if we then make the getXMLWait() call then it has the 
+	//effect of blocking the rendering of the progress dialog.  To get around this we use the strategy
+	//of running the AJAX call sequence through a callback function to setTimeout() so the main 
+	//UI thread is released and won't become locked waiting for for the AJAX response.
+	setTimeout(function () {
+		try {
+			
+			//send ajax call with the current script.
+			var ga = new GlideAjax('xBackgroundScriptEditorUtil');
+			ga.addParam('sysparm_name','runScript');
+			ga.addParam('sysparm_script_text', g_form.getValue("u_script"));
+			ga.getXMLWait();
+
+			//decode the results into an object.
+			var ans = ga.getAnswer();
+
+			//if we got a null return then there's a major error (probably a bug in this interface).
+			//All we can do is notify user
+			if (ans == null) {
+				g_form.addErrorMessage("ERROR: NO RESPONSE FROM SERVICENOW");
+				return;
+			}
+
+			//decode to a JSON object.
+			ans = JSON.parse(ans);
+
+			//if the script had an error, notify the user
+			if (ans.success != true) {
+				g_form.showFieldMsg("u_script", "ERROR DURING SCRIPT EXECUTION: '" + ans.errMsg + "'", "error");
+				
+			//otherwise simply indicate success.
+			} else {
+				g_form.showFieldMsg("u_script", "Script run successful", "info");
+			}
+
+			//if there was any gs.log output from the script then write that back to the output
+			if (ans.outputLog) {
+				var finalOut = "";
+				for (var is = 0; is < ans.outputLog.length; is++) {
+					
+					//begin each line with a heading cursor ">> " to denote a new line.
+					//somewhat similar to a shell prompt.
+					finalOut += ">> " + ans.outputLog[is] + "\n";
+				}
+				g_form.setValue("u_output", finalOut);
+			}
+
+		//if we get here there was a major client side issue (probably a bug in this interface).
+		//all we can do is tell the user.
+		} catch (ex2) {
+			g_form.addErrorMessage("CLIENT ERROR DURING EXECUTION: " + err);
+
+		//always close the progress window and re-enable the editor, regardless of execution success or failure.
+		} finally {
+			g_form.setDisabled("u_script", false);
+			gdw.destroy();
+		}
+
+	}, 500 /* NOTE: tested various timeouts and found that 1/2 second generally performed the best*/);
+}]]></script>
+<show_insert>true</show_insert>
+<show_multiple_update>false</show_multiple_update>
+<show_query>false</show_query>
+<show_update>true</show_update>
+<sys_class_name>sys_ui_action</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2023-08-12 03:45:05</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_domain_path>/</sys_domain_path>
+<sys_id>522ef4ee2f283110b6ec70682799b698</sys_id>
+<sys_mod_count>13</sys_mod_count>
+<sys_name>Run</sys_name>
+<sys_overrides display_value=""/>
+<sys_package display_value="Global" source="global">global</sys_package>
+<sys_policy/>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_ui_action_522ef4ee2f283110b6ec70682799b698</sys_update_name>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2023-08-14 21:12:31</sys_updated_on>
+<table>u_x_rich_background_script_editor</table>
+<ui11_compatible>false</ui11_compatible>
+<ui16_compatible>false</ui16_compatible>
+</sys_ui_action>
+</unload>
