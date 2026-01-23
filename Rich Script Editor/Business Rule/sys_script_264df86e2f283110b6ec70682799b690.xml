@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2026-01-23 05:14:55">
+<sys_script action="INSERT_OR_UPDATE">
+<abort_action>false</abort_action>
+<access>package_private</access>
+<action_delete>false</action_delete>
+<action_insert>false</action_insert>
+<action_query>false</action_query>
+<action_update>false</action_update>
+<active>true</active>
+<add_message>false</add_message>
+<advanced>true</advanced>
+<change_fields>false</change_fields>
+<client_callable>false</client_callable>
+<collection>u_x_rich_background_script_editor</collection>
+<condition/>
+<description/>
+<execute_function>false</execute_function>
+<filter_condition table="u_x_rich_background_script_editor"/>
+<is_rest>false</is_rest>
+<message/>
+<name>Admin Warning</name>
+<order>0</order>
+<priority>100</priority>
+<rest_method display_value=""/>
+<rest_method_text/>
+<rest_service display_value=""/>
+<rest_service_text/>
+<rest_variables/>
+<role_conditions/>
+<script><![CDATA[(function executeRule(current, previous) {
+	
+	//Provide an extra warning if the user is escalated to "security_admin" as scripts run with this privilege
+	//can do a lot of damage if bad code is run.
+	if (gs.hasRole("security_admin")) {
+		gs.addErrorMessage("WARNING: YOU ARE CURRENTLY ESCALATED TO security_admin. Any scripts executed will run with SECURITY_ADMIN level permission and could do serious harm if executed carelessly. USE THIS TOOL AT YOUR OWN RISK.");
+	} else {
+		gs.addInfoMessage("NOTE: Any scripts executed from this interface will run with admin permissions.");
+	}
+
+})(current, previous);]]></script>
+<sys_class_name>sys_script</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2023-08-12 03:41:18</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_domain_path>/</sys_domain_path>
+<sys_id>264df86e2f283110b6ec70682799b690</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_name>Admin Warning</sys_name>
+<sys_overrides display_value=""/>
+<sys_package display_value="Global" source="global">global</sys_package>
+<sys_policy/>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_script_264df86e2f283110b6ec70682799b690</sys_update_name>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2023-08-12 03:41:18</sys_updated_on>
+<template/>
+<when>before_display</when>
+</sys_script>
+</unload>
