@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2026-01-23 05:02:14">
+<sys_script_include action="INSERT_OR_UPDATE">
+<access>public</access>
+<active>true</active>
+<api_name>global.xBackgroundScriptEditorUtil</api_name>
+<caller_access/>
+<client_callable>true</client_callable>
+<description>Utility functions for the Rich Background Script Editor. </description>
+<mobile_callable>false</mobile_callable>
+<name>xBackgroundScriptEditorUtil</name>
+<sandbox_callable>true</sandbox_callable>
+<script><![CDATA[var xBackgroundScriptEditorUtil = Class.create();
+xBackgroundScriptEditorUtil.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+	
+	runScript: function() {
+		
+		//build return object
+		var ret = new xBackgroundScriptEditorUtil.runScriptReturn();
+		
+		//backing array to store any statements logged with gs.log
+		var stdout = [];
+		try {
+			
+			//ensure user has admin before allowing them to execute scripts.
+			if (!gs.hasRole("admin")) {
+				throw new GenericException("YOU DO NOT HAVE PERMISSION TO EXECUTE BACKGROUND SCRIPTS");
+			}
+			
+			//get the script the user sent.
+			var scr = "" + this.getParameter('sysparm_script_text');
+			
+			//if they sent no input then there's nothing to do.
+			if (!(JSUtil.nil(scr) || scr == "")) {
+			
+				//it is desired that any gs.log statements in the script will output the results of that
+				//log to the screen upon completion, similar to the OOB "Scripts - Background" tool that
+				//this the Rich background script editor is inspired from.  However, in order providing
+				//that requires being able to intercept all gs.log calls to build a buffer of statements
+				//to show to the ser. Attempts to redefine the gs.log function into something that captures
+				//the statements for us before logging to the sys log failed, most likely because that 
+				//function is backed by a Java class and doesn't allow those functions to be redefined.
+				//As a best-effort workaround, we instead do a simple replace of all instances of calls
+				//to gs.log with a predefined function, which adds the input to our running buffer of 
+				//statements to display on the script results, then logs it with gs.log to maintain 
+				//consistent behavior of all gs.log() calls being saved to the system log.  Because we're
+				//doing simple string replacement we need to use a function name not likely to be found in
+				//the user's script, hence the use of _____ in the naming of the functions and input variables.
+				function _____log(_____inp, _____src) {
+					stdout.push(_____inp) ;
+					gs.log(_____inp, _____src);
+				}			
+				var gsLogReplaceFunc = /gs\.log[(]/g;
+				scr = scr.replace(gsLogReplaceFunc, "_____log(");
+
+				//define the function wrapper for eval to call
+				var evalFun = "doFunc(); function doFunc() {" + scr + "}";
+
+				//run the eval.
+				eval(evalFun);
+
+				//set params on the ret object and return to client.
+				ret.outputLog = stdout;
+			}			
+			
+		} catch (err) {
+			
+			//if an execution error occured, send success=failed and the error message that caused
+			//the issue
+			ret.success = false;
+			ret.errMsg = "" + err;
+		}
+		return JSON.stringify(ret);
+	},
+	
+	type: 'xBackgroundScriptEditorUtil'
+});
+
+/**
+ * Defines the structure of the return object that calls to runScript() return to the AJAX client.
+ */
+xBackgroundScriptEditorUtil.runScriptReturn = Class.create();
+xBackgroundScriptEditorUtil.runScriptReturn.prototype = {
+	
+	initialize : function() {
+		this.success = true;  //assume success unless an error occurs
+	},
+	
+	//boolean indicating if the script run was successful or not.
+	success: null,
+
+	//if the script run throws an error, this is where that error message will be sent back to the client
+	//for display to the user.
+	errorMsg: null,
+
+	//If the script run is successful, this attribute will contain the output to be displayed to the user 
+	//in the console output box.
+	outputLog: null,
+	
+	type: "xBackgroundScriptEditorUtil.runScriptReturn"
+};]]></script>
+<sys_class_name>sys_script_include</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2023-08-12 03:49:09</sys_created_on>
+<sys_id>f4ae74222f683110b6ec70682799b6fd</sys_id>
+<sys_mod_count>2</sys_mod_count>
+<sys_name>xBackgroundScriptEditorUtil</sys_name>
+<sys_package display_value="Global" source="global">global</sys_package>
+<sys_policy/>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_script_include_f4ae74222f683110b6ec70682799b6fd</sys_update_name>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2023-08-14 21:34:25</sys_updated_on>
+</sys_script_include>
+</unload>
