@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2026-03-10 20:33:07">
+    <discovery_probes_snmp action="INSERT_OR_UPDATE">
+        <cache_results>false</cache_results>
+        <classic_mode>false</classic_mode>
+        <copy_script_to_target>false</copy_script_to_target>
+        <debug>false</debug>
+        <description>This is a test SNMP probe used during discovery development to find all OID's that a device will return data for it.  It is purely for development purposes and should NOT BE USED IN ANY PRODUCTION DISCOVERY SCENARIO.</description>
+        <ecc_queue_name>SNMP - ALL</ecc_queue_name>
+        <ecc_queue_source/>
+        <ecc_queue_topic>SNMP</ecc_queue_topic>
+        <est_sess_timeout/>
+        <execute_script_remotely>false</execute_script_remotely>
+        <handler/>
+        <host_classification>true</host_classification>
+        <javascript_handlers/>
+        <major_version>3</major_version>
+        <minor_version>1</minor_version>
+        <name>SNMP - ALL</name>
+        <post_processor_script/>
+        <request_interval/>
+        <request_timeout/>
+        <resolve_oid>false</resolve_oid>
+        <script/>
+        <stage>classify/identify</stage>
+        <sys_class_name>discovery_probes_snmp</sys_class_name>
+        <sys_created_by>github.com/derekpage3</sys_created_by>
+        <sys_created_on>2018-09-09 20:24:24</sys_created_on>
+        <sys_id>2988010cdbe42b401a52ed384b96193f</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>SNMP - ALL</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name>discovery_probes_snmp_2988010cdbe42b401a52ed384b96193f</sys_update_name>
+        <sys_updated_by>github.com/derekpage3</sys_updated_by>
+        <sys_updated_on>2026-03-10 20:31:38</sys_updated_on>
+        <type>Java</type>
+        <used_by_discovery>true</used_by_discovery>
+        <used_by_runbook>false</used_by_runbook>
+    </discovery_probes_snmp>
+</unload>
