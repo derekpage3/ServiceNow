@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2026-03-10 20:38:59">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>This update set creates a probe/sensor pair which will SNMP walk the entire MIB-2 and private.enterprises hierarchy of OID's on a device.  It is NOT meant to be used in a production scenario, but rather when developing a probe/pattern for a new device where a MIB is unavailable to provide the OID's that will return data.  It's essentially a "shot gun" approach to finding data.  Once found, you can then determine the OID's to query in your custom probe or pattern.  This should be deleted from the system after you're done using it and should never be loaded in a PROD instance.
+
+NOTE: This is an old enhancement built during the "Geneva" release of ServiceNow and newer features like the SNMP browser in Pattern Designer should be used in most cases instead of this probe.</description>
+<inserted/>
+<name>Update Set - ITOM - SNMP All (github.com/derekpage3)</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>de14262983a3321095daccb6feaad3d3</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-03-10 20:38:58</sys_created_on>
+<sys_id>1076e62983a3321095daccb6feaad305</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-03-10 20:38:58</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>discovery_probes_snmp_field_4688c50cdbe42b401a52ed384b9619c7</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="discovery_probes_snmp_field"><discovery_probes_snmp_field action="INSERT_OR_UPDATE"><active>true</active><command>walk</command><comment/><fields/><name>mib-2</name><oid>1.3.6.1.2</oid><probe display_value="SNMP - ALL">2988010cdbe42b401a52ed384b96193f</probe><sys_class_name>discovery_probes_snmp_field</sys_class_name><sys_created_by>dpage</sys_created_by><sys_created_on>2018-09-09 20:24:32</sys_created_on><sys_id>4688c50cdbe42b401a52ed384b9619c7</sys_id><sys_mod_count>8</sys_mod_count><sys_name>1.3.6.1.2</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>discovery_probes_snmp_field_4688c50cdbe42b401a52ed384b9619c7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-03-10 20:32:42</sys_updated_on></discovery_probes_snmp_field></record_update>]]></payload>
+<payload_hash>-1908798082</payload_hash>
+<remote_update_set display_value="Update Set - ITOM - SNMP All (github.com/derekpage3)">1076e62983a3321095daccb6feaad305</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-03-10 20:38:58</sys_created_on>
+<sys_id>1076e62983a3321095daccb6feaad306</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19cd973ab5b0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-03-10 20:38:58</sys_updated_on>
+<table/>
+<target_name>1.3.6.1.2</target_name>
+<type>SNMP Field</type>
+<update_domain>global</update_domain>
+<update_guid>9c0526690fa3321078b299c05538b692</update_guid>
+<update_guid_history>9c0526690fa3321078b299c05538b692:-1908798082,67f42669e4a332101dcd3b9225aea48f:1029978142,a93141d9c53ca300f85aea8bccc9cfbe:-2028245578,bc9366e590a33210183e154edee43aad:699116150,8563eea5eaa3321079eff3c0b358acfe:-2028245578,a93141d9c53ca300f85aea8bccc9cfbe:-2028245578,1d02ee253fa33210baadf1fbff8da98b:699116150,a93141d9c53ca300f85aea8bccc9cfbe:-2028245578,e270c1994f3ca3003c87f5803c55bfcd:1082369461,e6cefcd51f3ca300c8d99391fa7594e8:-525006503</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>discovery_probes_snmp_2988010cdbe42b401a52ed384b96193f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="discovery_probes_snmp"><discovery_probes_snmp action="INSERT_OR_UPDATE"><cache_results>false</cache_results><classic_mode>false</classic_mode><copy_script_to_target>false</copy_script_to_target><debug>false</debug><description>This is a test SNMP probe used during discovery development to find all OID's that a device will return data for it.  It is purely for development purposes and should NOT BE USED IN ANY PRODUCTION DISCOVERY SCENARIO.</description><ecc_queue_name>SNMP - ALL</ecc_queue_name><ecc_queue_source/><ecc_queue_topic>SNMP</ecc_queue_topic><est_sess_timeout/><execute_script_remotely>false</execute_script_remotely><handler/><host_classification>true</host_classification><javascript_handlers/><major_version>3</major_version><minor_version>1</minor_version><name>SNMP - ALL</name><post_processor_script/><request_interval/><request_timeout/><resolve_oid>false</resolve_oid><script/><stage>classify/identify</stage><sys_class_name>discovery_probes_snmp</sys_class_name><sys_created_by>github.com/derekpage3</sys_created_by><sys_created_on>2018-09-09 20:24:24</sys_created_on><sys_id>2988010cdbe42b401a52ed384b96193f</sys_id><sys_mod_count>5</sys_mod_count><sys_name>SNMP - ALL</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>discovery_probes_snmp_2988010cdbe42b401a52ed384b96193f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-03-10 20:31:38</sys_updated_on><type>Java</type><used_by_discovery>true</used_by_discovery><used_by_runbook>false</used_by_runbook></discovery_probes_snmp></record_update>]]></payload>
+<payload_hash>-791474946</payload_hash>
+<remote_update_set display_value="Update Set - ITOM - SNMP All (github.com/derekpage3)">1076e62983a3321095daccb6feaad305</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-03-10 20:38:58</sys_created_on>
+<sys_id>5476e62983a3321095daccb6feaad305</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19cd972b28a0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-03-10 20:38:58</sys_updated_on>
+<table/>
+<target_name>SNMP - ALL</target_name>
+<type>SNMP Probe</type>
+<update_domain>global</update_domain>
+<update_guid>70c4a229b8a33210aa65861cc5434aa9</update_guid>
+<update_guid_history>70c4a229b8a33210aa65861cc5434aa9:-791474946,ccc4a26978a332105eac6e375e09c696:-1753181812,01142229a2a3321014e7c9742a1a39dc:-791474946,1b042ee54ea3321056ea91502f58a2ea:-1753181812,d40462293ba33210acc28d4508e1167e:-1900334154,d25ed806349223007fc0e11d20c2c9c2:-1900334154,b09366e5eea33210c509683d37b3de7a:81552626,4163eea5b0a33210d75f77e3cb23c185:-1900334154,d25ed806349223007fc0e11d20c2c9c2:-1900334154,9d02ee252ca33210743b9e56efc7519c:81552626,d25ed806349223007fc0e11d20c2c9c2:-1900334154,e2ae7c19a93ca300a63dd3b24489c74a:-1964476474</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>discovery_probes_snmp_field_1498c10cdbe42b401a52ed384b961997</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="discovery_probes_snmp_field"><discovery_probes_snmp_field action="INSERT_OR_UPDATE"><active>true</active><command>walk</command><comment/><fields/><name>private</name><oid>1.3.6.1.4</oid><probe display_value="SNMP - ALL">2988010cdbe42b401a52ed384b96193f</probe><sys_class_name>discovery_probes_snmp_field</sys_class_name><sys_created_by>dpage</sys_created_by><sys_created_on>2018-09-09 20:24:38</sys_created_on><sys_id>1498c10cdbe42b401a52ed384b961997</sys_id><sys_mod_count>8</sys_mod_count><sys_name>1.3.6.1.4</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>discovery_probes_snmp_field_1498c10cdbe42b401a52ed384b961997</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-03-10 20:32:50</sys_updated_on></discovery_probes_snmp_field></record_update>]]></payload>
+<payload_hash>1957497878</payload_hash>
+<remote_update_set display_value="Update Set - ITOM - SNMP All (github.com/derekpage3)">1076e62983a3321095daccb6feaad305</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-03-10 20:38:58</sys_created_on>
+<sys_id>5c76e62983a3321095daccb6feaad305</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19cd973cb130000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-03-10 20:38:58</sys_updated_on>
+<table/>
+<target_name>1.3.6.1.4</target_name>
+<type>SNMP Field</type>
+<update_domain>global</update_domain>
+<update_guid>96056a6924a3321050ae7c70ceab0492</update_guid>
+<update_guid_history>96056a6924a3321050ae7c70ceab0492:1957497878,e9056a6959a3321067781c23d9679b8e:-1907465418,2d3141d92e3ca3006b7c4da5ff1007ba:448170574,f49366e5c4a33210d0d58504bd34f1aa:542284174,8d63eea5b5a33210a70ea3ef526887f9:448170574,2d3141d92e3ca3006b7c4da5ff1007ba:448170574,9902ee258ba33210166cebc3287b9b87:542284174,2d3141d92e3ca3006b7c4da5ff1007ba:448170574,6270c199d73ca300eac39b15f74a2ec9:451985037,80defc19613ca3009b3e0992ccd4af16:-1475715267</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>discovery_sensor_aadd54060f922300e608b36be1050e1e</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="discovery_sensor"&gt;&lt;discovery_sensor action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;agent/&gt;&lt;apply_defaults&gt;false&lt;/apply_defaults&gt;&lt;classification_type/&gt;&lt;coalesce/&gt;&lt;condition_script/&gt;&lt;data_option&gt;insert_update&lt;/data_option&gt;&lt;data_source/&gt;&lt;description&gt;SNMP - NULL&lt;/description&gt;&lt;external_names/&gt;&lt;java_class&gt;com.snc.discovery.sensor.snmp.Classify&lt;/java_class&gt;&lt;major_version&gt;1&lt;/major_version&gt;&lt;minor_version&gt;1&lt;/minor_version&gt;&lt;name&gt;SNMP - NULL&lt;/name&gt;&lt;order/&gt;&lt;parent/&gt;&lt;reacts_to_probe display_value="SNMP - ALL"&gt;2988010cdbe42b401a52ed384b96193f&lt;/reacts_to_probe&gt;&lt;script&gt;&lt;![CDATA[/**
+ * @author github.com/derekpage3.
+ *
+ * This sensor is a companion to the "SNMP - ALL"
+ * discovery probe and simply does nothing with the
+ * payload returned by that probe. That probe is used
+ * only for initial discovery of a new SNMP device
+ * to determine what OIDs the device will return data
+ * on and so we don't do anything with the data. Having
+ * this sensor in place simply prevents discovery from
+ * marking the return ECC Queue entry with a status of
+ * "error"
+ */
+new DiscoverySensor({
+
+    //do nothing with the payload.
+    process: function() {},
+
+    type: 'DiscoverySensor'
+});]]&gt;&lt;/script&gt;&lt;sensor_type&gt;Javascript&lt;/sensor_type&gt;&lt;sys_class_name&gt;discovery_sensor&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dpage@contendersolutions.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-12-11 22:15:42&lt;/sys_created_on&gt;&lt;sys_id&gt;aadd54060f922300e608b36be1050e1e&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;SNMP - NULL&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;discovery_sensor_aadd54060f922300e608b36be1050e1e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-03-10 20:32:31&lt;/sys_updated_on&gt;&lt;table/&gt;&lt;type&gt;excel&lt;/type&gt;&lt;xml_root_node/&gt;&lt;/discovery_sensor&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;aadd54060f922300e608b36be1050e1e&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-03-10 20:32:31&lt;/sys_created_on&gt;&lt;sys_id&gt;21f4a26983a3321095daccb6feaad30d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-03-10 20:32:31&lt;/sys_updated_on&gt;&lt;table&gt;discovery_sensor&lt;/table&gt;&lt;use_es_latest&gt;false&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1398147405</payload_hash>
+<remote_update_set display_value="Update Set - ITOM - SNMP All (github.com/derekpage3)">1076e62983a3321095daccb6feaad305</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-03-10 20:38:58</sys_created_on>
+<sys_id>d076e62983a3321095daccb6feaad306</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19cd97381380000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-03-10 20:38:58</sys_updated_on>
+<table/>
+<target_name>SNMP - NULL</target_name>
+<type>Sensor</type>
+<update_domain>global</update_domain>
+<update_guid>e5f4266971a33210c8aba5a7b903c855</update_guid>
+<update_guid_history>e5f4266971a33210c8aba5a7b903c855:-1398147405,1eace05e309e230095d7728daa1835ab:-1828015485,389366e5f8a332109030f8878988d9b1:821150009,1d02ee25e9a33210e2ab1295d87d61a9:821150009,1eace05e309e230095d7728daa1835ab:-1828015485,1d02ee25e9a33210e2ab1295d87d61a9:821150009,dd02ee25c5a332107de95c9ac8748374:0,1eace05e309e230095d7728daa1835ab:-1828015485,88aca05e079e2300cbcab05a6bd6b808:-1059109871,aedd5406ad922300834b82803dcaca1f:-1828015485</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
